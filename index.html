@@ -8,18 +8,19 @@
 	<link rel="stylesheet" href="style.css" type="text/css">
 </head>
     <body>
-        <textarea id="paste" rows="4" cols="50" >
-        Paste mininet dump here: *** Dumping network connections
-        s1 lo:  s1-eth1:receiver-eth0 s1-eth2:h1-eth0 s1-eth3:s2-eth1
-        s2 lo:  s2-eth1:s1-eth3 s2-eth2:h2-eth0 s2-eth3:s3-eth1
-        h1 h1-eth0:s1-eth2
-        </textarea>
+<textarea id="paste" rows="4" cols="50" >
+Paste mininet dump here: *** Dumping network connections
+s1 lo:  s1-eth1:receiver-eth0 s1-eth2:h1-eth0 s1-eth3:s2-eth1
+s2 lo:  s2-eth1:s1-eth3 s2-eth2:h2-eth0 s2-eth3:s3-eth1
+h1 h1-eth0:s1-eth2
+</textarea>
 
         <button id="redrawButton" type="button">redraw</button>
         <br />
 
         <canvas id="viewport" width="800" height="600"></canvas>
-        <script src="jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+        
         <script src="arbor.js"></script>  
         <script src="main.js"></script>
 
