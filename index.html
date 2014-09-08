@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Mininet dump visualizer</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+    <body>
+        <textarea id="paste" rows="4" cols="50" >
+        Paste mininet dump here: *** Dumping network connections
+        s1 lo:  s1-eth1:receiver-eth0 s1-eth2:h1-eth0 s1-eth3:s2-eth1
+        s2 lo:  s2-eth1:s1-eth3 s2-eth2:h2-eth0 s2-eth3:s3-eth1
+        h1 h1-eth0:s1-eth2
+        </textarea>
+
+        <button id="redrawButton" type="button">redraw</button>
+        <br />
+
+        <canvas id="viewport" width="800" height="600"></canvas>
+        <script src="jquery.min.js"></script>
+        <script src="arbor.js"></script>  
+        <script src="main.js"></script>
+
+    </body>
+</html>
